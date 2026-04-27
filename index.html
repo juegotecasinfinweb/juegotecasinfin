@@ -4,6 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Juegoteca Sin Fin — Boulogne, Buenos Aires</title>
+
+<!-- SEO -->
+<meta name="description" content="Juegoteca Sin Fin es una organización sin fines de lucro de Boulogne, Buenos Aires, que promueve el juego, la cultura y los derechos humanos desde 1998.">
+<meta name="keywords" content="Juegoteca Sin Fin, ONG Boulogne, talleres niños Buenos Aires, voluntariado San Isidro, organización comunitaria, juego libre, actividades culturales">
+<meta name="author" content="Juegoteca Sin Fin">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph (para compartir en redes) -->
+<meta property="og:title" content="Juegoteca Sin Fin — Jugando y creciendo juntos en el barrio">
+<meta property="og:description" content="Organización comunitaria de Boulogne, Buenos Aires. Talleres artísticos, juego libre y actividades culturales para niños y adultos desde 1998.">
+<meta property="og:url" content="https://juegotecasinfin.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://juegotecasinfin.github.io/JSF_Logotipo_Barrilete_Juegoteca.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="JSF_Logotipo_Barrilete_Juegoteca.png">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -767,7 +783,44 @@
     transform: scaleX(-1);
   }
 
-  @keyframes floatDeco {
+  .hero .deco-cara-fuego {
+    width: 110px;
+    top: 100px;
+    right: 60px;
+    animation: floatDeco2 8s ease-in-out infinite;
+  }
+
+  @keyframes floatDeco2 {
+    0%, 100% { transform: translateY(0) rotate(10deg); }
+    50% { transform: translateY(-10px) rotate(15deg); }
+  }
+
+  #barrio { position: relative; overflow: hidden; }
+  #barrio .deco-pajaro-tropical {
+    width: 120px;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0.75;
+    transform: scaleX(-1);
+  }
+
+  #redes { position: relative; overflow: hidden; }
+  #redes .deco-lampara {
+    width: 100px;
+    top: 30px;
+    left: 40px;
+    opacity: 0.6;
+    transform: rotate(-15deg);
+  }
+
+  footer { position: relative; overflow: hidden; }
+  footer .deco-corazon-cara {
+    width: 80px;
+    position: absolute;
+    bottom: 16px;
+    right: 24px;
+    opacity: 0.4;
+  }
     0%, 100% { transform: translateY(0) rotate(-15deg); }
     50% { transform: translateY(-12px) rotate(-10deg); }
   }
@@ -832,6 +885,7 @@
     <span>Scrolleá</span>
     <span>↓</span>
   </div>
+  <img src="JSF_Cara_de_fuego.png" alt="" class="deco deco-cara-fuego">
   <img src="JSF_Explosion.png" alt="" class="deco deco-explosion">
   <img src="JSF_corazón_pelotas.png" alt="" class="deco deco-corazon-pelotas">
 </div>
@@ -938,6 +992,7 @@
       </div>
     </div>
   </div>
+  <img src="JSF_Pájaro_tropical.png" alt="" class="deco deco-pajaro-tropical">
 </section>
 
 <!-- HISTORIA -->
@@ -1029,10 +1084,10 @@
         <span class="red-name">Instagram</span>
         <span class="red-handle">@lajuegotecasinfin</span>
       </a>
-      <a href="https://www.facebook.com/juegotecasinfin" target="_blank" class="red-card">
-        <span class="red-icon">📘</span>
+      <a href="https://www.facebook.com/lajuegotecasinfin/" target="_blank" class="red-card">
+        <span class="red-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
         <span class="red-name">Facebook</span>
-        <span class="red-handle">Juegoteca Sin Fin</span>
+        <span class="red-handle">lajuegotecasinfin</span>
       </a>
       <a href="mailto:juegotecasinfin@yahoo.com.ar" class="red-card">
         <span class="red-icon">✉️</span>
@@ -1041,6 +1096,7 @@
       </a>
     </div>
   </div>
+  <img src="JSF_lámpara.png" alt="" class="deco deco-lampara">
 </section>
 
 <!-- CONTACTO -->
@@ -1072,7 +1128,9 @@
             <strong>Colectivos que te acercan:</strong>
             <div class="colectivos">
               <span class="col-chip">15</span>
+              <span class="col-chip">60</span>
               <span class="col-chip">87</span>
+              <span class="col-chip">194</span>
               <span class="col-chip">203</span>
               <span class="col-chip">204</span>
               <span class="col-chip">314</span>
@@ -1081,8 +1139,6 @@
               <span class="col-chip">407</span>
               <span class="col-chip">437</span>
               <span class="col-chip">707</span>
-              <span class="col-chip">60</span>
-              <span class="col-chip">194</span>
             </div>
           </div>
         </div>
@@ -1103,6 +1159,7 @@
 
 <!-- FOOTER -->
 <footer>
+  <img src="JSF_Corazón_con_cara.png" alt="" class="deco-corazon-cara">
   <img src="JSF_Logotipo_Juegoteca.png" alt="Juegoteca Sin Fin" class="footer-logo">
   <p>
     © 2025 Asociación Civil Juegoteca Sin Fin · Boulogne, Buenos Aires<br>
