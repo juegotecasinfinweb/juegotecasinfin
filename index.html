@@ -135,16 +135,27 @@
     50% { transform: translate(-20px, -30px) scale(1.08); }
   }
 
-  .hero-logo {
-    width: 220px;
-    margin-bottom: 28px;
-    background: #4BBDE8;
+  .hero-logo-wrap {
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
-    padding: 36px;
+    background: #4BBDE8;
     box-shadow: 0 8px 32px rgba(0,0,0,0.25);
     animation: logoFloat 6s ease-in-out infinite;
     position: relative;
     z-index: 1;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .hero-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 28px;
   }
 
   @keyframes logoFloat {
@@ -714,11 +725,13 @@
 
 <!-- HERO -->
 <div class="hero">
-  <img
-    src="JSF_Logotipo_Barrilete_Juegoteca.png"
-    alt="Logo Juegoteca Sin Fin"
-    class="hero-logo"
-  >
+  <div class="hero-logo-wrap">
+    <img
+      src="JSF_Logotipo_Barrilete_Juegoteca.png"
+      alt="Logo Juegoteca Sin Fin"
+      class="hero-logo"
+    >
+  </div>
   <h1>Jugando y creciendo<br><em>juntos en el barrio</em></h1>
   <p class="hero-desc">
     Somos una organización comunitaria de Boulogne, Buenos Aires,
